@@ -32,7 +32,7 @@ git clone https://github.com/jithin-k-sreedharan/times.git
 - Compiler with C++11 support
 - Gurobipy ([Gurobi](http://www.gurobi.com/) Python library). This is not required for the algorithms, but needed for running the script to find the optimal plot (Figure 3 in the papers)
 - Python 2.7+ with Numpy and Scipy support.
-- [SNAP](https://snap.stanford.edu/snap/index.html) graph library. The latest version of the library is already provided inside with the code and is available in `libraries` folder.
+- [SNAP](https://snap.stanford.edu/snap/index.html) graph library. The latest version of the library is already provided with the code and is available in `libraries` folder.
 
 ## Installation and Running the Algorithms
 To build the algorithm of finding arrival order of a given graph in edge-list format:
