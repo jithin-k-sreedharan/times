@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 791,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"origami:clone",
+				"Origami: Clone File to Pane on the Right"
+			],
+			[
+				"origami:de",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"origam",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"project:",
+				"Project: Save As"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"Build: Cancel"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"origami",
+				"Origami: Clone File to Pane Below"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"makr",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"markowsli",
+				"Markdown Preview: Export HTML in Sublime Text"
+			],
+			[
+				"markow",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"markdonw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdownluve",
+				"MarkdownLivePreview: Edit Current File"
+			],
+			[
+				"markdo",
+				"MarkdownLivePreview: Edit Current File"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/dd_header.h",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/dd_graph.h",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/Makefile",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/dd_temporal_algorithms.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/README.md",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/dd_koala.h",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/dd_temporal_bound.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/github_repository/.gitignore",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/node_order_estimation/algorithms_theory/algorithms-theory-new.py",
+		"/Users/jithin/Dropbox/Downloads/algorithms-theory.py",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/node_order_estimation/algorithms_theory/algorithms-theory.py",
+		"/Users/jithin/Dropbox/Documents/My_website/upload/Purdue_CS_website/index.html",
+		"/Users/jithin/Dropbox/Documents/Job_search/my_academic_applications/title_abstact_bio_Sreedharan.txt",
+		"/Users/jithin/Dropbox/Documents/Work/unsorted_notes/python_learning.md",
+		"/Users/jithin/Dropbox/Downloads/heat_plot.py",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/parameter_estimation/nauty26r11/configure",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/parameter_estimation/pd_infer_parameters.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/parameter_estimation/pd_infer_parameters.py",
+		"/Users/jithin/Dropbox/Documents/Work/unsorted_notes/cpp_learning.md",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/python/parameter_estn/pd_infer_parameters.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/python/parameter_estn/nauty26r11/pd_automorphisms.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/python/parameter_estn/plfit.py",
+		"/Users/jithin/Dropbox/Documents/Work/unsorted_notes/linux_commands.md",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/python/from_KT/algo-theory_DD-model.py",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/python/from_KT/pd_admissibility-01.py",
+		"/Users/jithin/Dropbox/Downloads/nauty26r11/pd_admissibility-01.py",
+		"/Users/jithin/Dropbox/Documents/My_website/upload/Purdue_CS_website/files/misc/probability_books.md",
+		"/var/folders/m_/nlf2mp4d35n63g331k6634c80000gn/T/rsub-byrv13/pd_admissibility-01.py",
+		"/var/folders/m_/nlf2mp4d35n63g331k6634c80000gn/T/rsub-k3fl9c/pd_admissibility-01.py",
+		"/var/folders/m_/nlf2mp4d35n63g331k6634c80000gn/T/rsub-9or79h/pd_admissibility-01.py",
+		"/var/folders/m_/nlf2mp4d35n63g331k6634c80000gn/T/rsub-s_y5p7/.profile",
+		"/var/folders/m_/nlf2mp4d35n63g331k6634c80000gn/T/rsub-hbqfxl/.profile",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/tutorials/demo-TUNGraph.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/Makefile",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/Makefile.config",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/tutorials/demo-TNGraph.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/glib-core/ds.h",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Makefile.config",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/src/times_DD.hpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/snap-core/graph.h",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/src/vertex_ordering_sequential_predict.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/ReadMe.txt",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/src/funs_times_DD.cpp",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Makefile",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/README.md",
+		"/Users/jithin/Dropbox/Documents/Work/projects/node_age_DD/code/cpp/times_DD/Snap-4.1/Version",
+		"/Users/jithin/Dropbox/Downloads/dd-model.py",
+		"/Users/jithin/Dropbox/Downloads/pd_admissibility-1.py",
+		"/Users/jithin/Dropbox/Downloads/pd_admissibility.py",
+		"/Users/jithin/Documents/work/unsorted_notes/python_learning.md",
+		"/Users/jithin/Documents/work/unsorted_notes/cpp_learning.md",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/nx_jks_routines.py",
+		"/Users/jithin/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/8C21D354-8ABD-4A59-AECB-05AB22D55954/CheckParameters.cpp",
+		"/Users/jithin/Documents/work/temp/CheckParameters.cpp",
+		"/Users/jithin/Documents/work/temp/check.cpp",
+		"/Users/jithin/Downloads/CheckParameters-1.cpp",
+		"/Users/jithin/Downloads/ProteinHistorian/age_proteins.py",
+		"/Users/jithin/Documents/work/unsorted_notes/latex_learning.md",
+		"/Users/jithin/Documents/work/unsorted_notes/linux_commands.md",
+		"/Users/jithin/Documents/work/unsorted_notes/english.md",
+		"/Users/jithin/Downloads/CheckParameters.cpp",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/cpp_impln/vertex_ordering/README.md",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/cpp_impln/vertex_ordering/ReadMe.txt",
+		"/Users/jithin/Documents/work/temp/YEAST_wapinski07_synergy_age.txt",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/BA_ranking_1.py",
+		"/Users/jithin/Downloads/uniprot-yourlist%3AM20180910A7434721E10EE6586998A056CCD0537EABFFC3U 2.txt",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/HCP/Glasser_et_al_SI_figure/HCP_PhaseTwo/Q1-Q6_RelatedParcellation210/MNINonLinear/fsaverage_LR32k/Q1-Q6_RelatedParcellation210.L.CorticalAreas.32k_fs_LR.border",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/HCP/Glasser_et_al_SI_figure/HCP_PhaseTwo/Glasser_et_al_2016_HCP_MMP1.0_StudyData/Glasser_et_al_2016_HCP_MMP1.0_4_SupplementaryNeuroanatomicalResults.scene",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/check.cpp",
+		"/Users/jithin/Dropbox/work/projects/WWW2018/journal/Nature_submission/compile-sup.sh",
+		"/Users/jithin/Documents/work/projects/node_age/simulations/cpp_impln/vertex_ordering/vertex_ordering.sublime-project",
+		"/Users/jithin/Documents/work/projects/node_age_DD/code/graph_cerevisiae_cleaned.txt",
+		"/Users/jithin/Documents/work/projects/node_age_DD/code/duplication-divergence_model.ipynb",
+		"/Users/jithin/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/jithin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jithin/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 97.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"markdonw_live_preview_last_run": 1551317401.11,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "times.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ds.",
+				"Snap-4.1/glib-core/ds.h"
+			],
+			[
+				"a",
+				"~/Dropbox/Downloads/ProteinHistorian/age_proteins.py"
+			],
+			[
+				"d",
+				"~/Dropbox/Downloads/dd-model.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "un",
+		"selected_items":
+		[
+			[
+				"un",
+				"~/Dropbox/Documents/Work/unsorted_notes/unsorted_notes.sublime-project"
+			],
+			[
+				"",
+				"~/Documents/work/projects/node_age/simulations/cpp_impln/vertex_ordering/vertex_ordering.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
