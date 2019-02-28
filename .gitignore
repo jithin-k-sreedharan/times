@@ -3,6 +3,7 @@
 /build/
 /src/archiv/
 /Snap-3.0/
+/src/preprocessing_Friendster.cpp
 *.sublime*
 *.tags
 *.pdf
