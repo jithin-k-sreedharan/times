@@ -32,16 +32,25 @@ git clone https://github.com/jithin-k-sreedharan/times.git
 - Compiler with C++11 support
 - Gurobipy ([Gurobi](http://www.gurobi.com/) Python library). This is not required for the algorithms, but needed for running the script to find the optimal plot (Figure 3 in the papers)
 - Python 2.7+ with Numpy and Scipy support.
+- [SNAP](https://snap.stanford.edu/snap/index.html) graph library. The latest version of the library is already provided inside with the code and is available in `libraries` folder.
 
-### Installation
+## Installation and Running the Algorithms
+To build the algorithm of finding arrival order of a given graph in edge-list format:
 ```bash
-make
+make givengraph
 ```
+To build the algorithm of finding arrival order various random graph models:
+```bash
+make randomgraph
+```
+To build all the algorithms
+```bash
+make all
+```
+Running `make` first time takes time as it needs to compile the `SNAP` library.
+
 #### Editing `Makefile` file for Mac systems
 The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
-
-#### Some details of the code
-Most of the code is written in C++. The code makes use of [SNAP library](https://snap.stanford.edu/snap/index.html) for graph data structures.
 
 ## Data
 Most of the data is taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is taken from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
