@@ -1901,7 +1901,7 @@ TIntIntVH find_parallel_rank_minmax_deg(PNEANet G, const int min_indeg,
   TIntIntVH rank_new_1;
 
 
-   MnDegV;
+  TIntV MnDegV;
   // int MnDeg;
   int depth_dag;
   int i = 0;
@@ -2037,6 +2037,7 @@ std::vector<std::vector<double>> find_recall_plot(Tuint64uint64M rank_node,
   return recall_matrix;
 }
 
+//Implements binomial coefficient
 double nCk(int n, int k) {
   if (k > n)
     std::cerr << "k > n in nCk calculation" << std::endl;
