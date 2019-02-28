@@ -42,12 +42,6 @@ endif
 
 
 MAIN = times_givengraph
-# MAIN = vertex_ordering_random_graph
-# MAIN = vertex_ordering_sequential_predict
-# MAIN = vertex_ordering_random_graph_exp
-# MAIN = process_temporal_graph
-# ————————————————
-
 SRC_DIR = ./src
 BUILD_DIR = ./build
 # Snap-3.0 is required for finding P_uv forthe optmization; for compiling vertex_ordering_sequential_predict
