@@ -1,6 +1,6 @@
 # TIMES
-![image](https://user-images.githubusercontent.com/19230005/53579065-e0fdf500-3b46-11e9-9437-6471a42f26f4.png=250x)
-<!-- <img src="https://user-images.githubusercontent.com/19230005/53579065-e0fdf500-3b46-11e9-9437-6471a42f26f4.png" width="200"> -->
+<!-- ![image](https://user-images.githubusercontent.com/19230005/53579065-e0fdf500-3b46-11e9-9437-6471a42f26f4.png) -->
+<img src="https://user-images.githubusercontent.com/19230005/53579065-e0fdf500-3b46-11e9-9437-6471a42f26f4.png" width="200">
 
 
 Given a single snapshot of a dynamic network, this code provides algorithms to infer the arrival order of the nodes.
