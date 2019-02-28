@@ -1,7 +1,7 @@
 // This is an improvement over Vertex Ordering with precition of non-perfect
 // pairs using Lemma 1 expression with Sequential technique.
 
-#include "vertex_ordering.hpp"
+#include "times.hpp"
 
 // print vector contents:
 void print_vector(std::vector<int> &temp, char *s) {

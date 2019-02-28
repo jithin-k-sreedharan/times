@@ -4,7 +4,7 @@
 // 2. Saves the rank of each node in the graph of the form 'node rank'
 // The code has to be MODIFIED when attributes are not UNSIGNED INTEGER
 
-#include "vertex_ordering.hpp"
+#include "times.hpp"
 
 int main(int argc, char* argv[])
 {
