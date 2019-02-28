@@ -10,7 +10,7 @@ The associated papers of this work are the following:
 * [Inferring Temporal Information from a Snapshot of a Dynamic Network](https://rdcu.be/boQ5z)\
 Jithin K. Sreedharan, Abram Magner, Ananth Grama, and Wojciech Szpankowski.\
 _Nature Scientific Reports 2019_.\
-Supplementary Material with all the mathematical details of the analysis and implementation is available [here].(https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-019-38912-0/MediaObjects/41598_2019_38912_MOESM1_ESM.pdf)
+Supplementary Material with all the mathematical details of the analysis and implementation is available [here.](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-019-38912-0/MediaObjects/41598_2019_38912_MOESM1_ESM.pdf)
 * [TIMES: Temporal Information Maximally Extracted from Structures](https://dl.acm.org/citation.cfm?id=3186105)\
 Abram Magner, Jithin K. Sreedharan, Ananth Grama, and Wojciech Szpankowski\
 _ACM International Conference on World Wide Web (WWW) 2018_
@@ -19,7 +19,7 @@ An example application from Scientific Reports paper:
 <figure>
 <img src="https://user-images.githubusercontent.com/19230005/53579668-fcb5cb00-3b47-11e9-8e39-dfd186865462.png" width="700">
 <figcaption>
-Human brain evolution deduced by our method from anetwork of human brain formed from Human Connectome Project (HCP) fMRI data.
+Human brain evolution deduced by our method from a network of human brain formed from Human Connectome Project (HCP) fMRI data.
 </figcaption>
 </figure>
 
