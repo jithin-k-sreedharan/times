@@ -37,7 +37,7 @@ git clone https://github.com/jithin-k-sreedharan/times.git
 ```bash
 make
 ```
-#### Editing `make` file for Mac systems
+#### Editing `Makefile` file for Mac systems
 The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
 
 #### Some details of the code
