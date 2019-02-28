@@ -1,12 +1,31 @@
 # TIMES
-This code accompanies the following papers:
 
+Given a single snapshot of a dynamic network, this code provides algorithms to infer the arrival order of the nodes.
+It implements the optimal and approximate solutions. The optimal solution is a result of an integer programming formulation with coefficients found by random walk techniques.
+
+The associated papers of this work are the following:
 * Inferring Temporal Information from a Snapshot of a Dynamic Network\
 Jithin K. Sreedharan, Abram Magner, Ananth Grama, and Wojciech Szpankowski.\
 _Nature Scientific Reports 2019_
 * [TIMES: Temporal Information Maximally Extracted from Structures](https://dl.acm.org/citation.cfm?id=3186105)\
 Abram Magner, Jithin K. Sreedharan, Ananth Grama, and Wojciech Szpankowski\
 _ACM International Conference on World Wide Web (WWW) 2018_
+
+## Getting Started
+Download the repository or clone it with the following command
+```bash
+git clone https://github.com/jithin-k-sreedharan/times.git
+```
+
+### Prerequisites
+- Compiler with C++11 support
+- Gurobipy ([Gurobi](http://www.gurobi.com/) Python library). This is not required for the algorithms, but needed for running the script to find the optimal plot (Figure 3 in the papers)
+- Python 2.7+ with Numpy and Scipy support.
+
+### Installation
+```bash
+make
+```
 
 #### Code
 The code is written in C++. Use the `Makefile` and `Makefile.config` to make changes to the compilation process. It can be compiled either using g++7 or clang with support for C++11. The code make use of [SNAP library](https://snap.stanford.edu/snap/index.html) for graph data structures.
