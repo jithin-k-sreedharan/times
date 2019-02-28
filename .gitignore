@@ -1,6 +1,8 @@
 ReadMe.txt
 /data/
 /build/
+/src/archiv/
+/Snap-3.0/
 *.sublime*
 *.tags
 *.pdf
