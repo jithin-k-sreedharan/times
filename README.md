@@ -9,7 +9,7 @@ It implements the optimal and approximate solutions of the problem. The optimal 
 The associated papers of this work are the following:
 * [Inferring Temporal Information from a Snapshot of a Dynamic Network](https://rdcu.be/boQ5z)\
 Jithin K. Sreedharan, Abram Magner, Ananth Grama, and Wojciech Szpankowski.\
-_Nature Scientific Reports 2019_. [Supplementary Material](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-019-38912-0/MediaObjects/41598_2019_38912_MOESM1_ESM.pdf) (contains all mathematical details of analysis and implementation)
+_Nature Scientific Reports 2019_. [Supplementary Material](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-019-38912-0/MediaObjects/41598_2019_38912_MOESM1_ESM.pdf) (details of analysis and implementation)
 * [TIMES: Temporal Information Maximally Extracted from Structures](https://dl.acm.org/citation.cfm?id=3186105)\
 Abram Magner, Jithin K. Sreedharan, Ananth Grama, and Wojciech Szpankowski\
 _ACM International Conference on World Wide Web (WWW) 2018_
