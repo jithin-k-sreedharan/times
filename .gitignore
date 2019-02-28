@@ -2,6 +2,15 @@
 /build/
 *.sublime*
 *.tags
+*.pdf
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
 
 # Prerequisites
 *.d
