@@ -68,7 +68,7 @@ $(MAIN): $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o
 # $(MAIN): $(SRC_DIR)/$(MAIN).cpp $(DEPH) $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o
 # 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/$(MAIN) $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
-$(EXSNAP)/Snap.o:
+$(EXSNAP)/Snap.o: | $(EXSNAP)/Snap.o
 	make -C $(EXSNAP)
 
 clean:
