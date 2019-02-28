@@ -16,8 +16,12 @@ Abram Magner, Jithin K. Sreedharan, Ananth Grama, and Wojciech Szpankowski\
 _ACM International Conference on World Wide Web (WWW) 2018_
 
 An example application from Scientific Reports paper:
-<brain figure><img src="https://user-images.githubusercontent.com/19230005/53579668-fcb5cb00-3b47-11e9-8e39-dfd186865462.png" width="600">
-
+<figure>
+<img src="https://user-images.githubusercontent.com/19230005/53579668-fcb5cb00-3b47-11e9-8e39-dfd186865462.png" width="700">
+<figcaption>
+Human brain evolution deduced by our method from anetwork of human brain formed from Human Connectome Project (HCP) fMRI data.
+</figcaption>>
+</figure>
 
 ## Getting Started
 Download the repository or clone it with the following command
