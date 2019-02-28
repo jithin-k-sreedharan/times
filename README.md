@@ -1,12 +1,14 @@
 # TIMES
+![image](https://user-images.githubusercontent.com/19230005/53578466-c1b29800-3b45-11e9-86d5-b6fced06c589.png)\
 
 Given a single snapshot of a dynamic network, this code provides algorithms to infer the arrival order of the nodes.
-It implements the optimal and approximate solutions. The optimal solution is a result of an integer programming formulation with coefficients found by random walk techniques.
+It implements the optimal and approximate solutions of the problem. The optimal solution is a result of an integer programming formulation with coefficients found by random walk techniques.
 
 The associated papers of this work are the following:
-* Inferring Temporal Information from a Snapshot of a Dynamic Network\
+* [Inferring Temporal Information from a Snapshot of a Dynamic Network](https://rdcu.be/boQ5z)\
 Jithin K. Sreedharan, Abram Magner, Ananth Grama, and Wojciech Szpankowski.\
-_Nature Scientific Reports 2019_
+_Nature Scientific Reports 2019_.\
+Supplementary Material with all the mathematical details of the analysis and implementation is available [here](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-019-38912-0/MediaObjects/41598_2019_38912_MOESM1_ESM.pdf)
 * [TIMES: Temporal Information Maximally Extracted from Structures](https://dl.acm.org/citation.cfm?id=3186105)\
 Abram Magner, Jithin K. Sreedharan, Ananth Grama, and Wojciech Szpankowski\
 _ACM International Conference on World Wide Web (WWW) 2018_
