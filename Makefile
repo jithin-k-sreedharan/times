@@ -11,8 +11,8 @@ MAIN = vertex_ordering_general_directed_graph
 SRC_DIR = ./src
 BUILD_DIR = ./build
 # Snap-3.0 is required for finding P_uv forthe optmization; for compiling vertex_ordering_sequential_predict
-SNAP_DIR = ./Snap-3.0
-# SNAP_DIR = ./Snap-4.0
+SNAP_DIR = ./libraries/Snap-3.0
+# SNAP_DIR = ./libraries/Snap-4.0
 
 # DEPH = $(SRC_DIR)/vertex_ordering.hpp
 DEPCPP = funs_vertex_ordering
