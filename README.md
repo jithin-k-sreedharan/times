@@ -43,6 +43,17 @@ To build the algorithm of finding arrival order of various random graph models:
 ```bash
 make randomgraph
 ```
+
+**Utilities for processing temporal graphs:**
+```bash
+make process_temporal_graph
+```
+An example run
+```bash
+./process_temporal_graph -i:"FB_wall_network.txt" -choice:1
+```
+This will process the graph file `FB_wall_network.txt` which has edges listed in `u v t` format per line (for node pair: `(u,v)`, the time of edge creation is `t`). It will output `predicted_rank.txt` with `u rank` format (arrival `rank` for node `u`) per line.
+
 To build all the algorithms
 ```bash
 make all

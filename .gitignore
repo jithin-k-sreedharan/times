@@ -4,6 +4,8 @@
 /src/archiv/
 /Snap-3.0/
 /src/preprocessing_Friendster.cpp
+/src/unsorted_functions_code.cpp
+
 *.sublime*
 *.tags
 *.pdf

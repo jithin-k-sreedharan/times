@@ -49,7 +49,7 @@ BUILD_DIR = ./build
 SNAP_DIR = ./libraries/Snap-4.0
 DEPCPP = times_functions
 
-all: givengraph randomgraph
+all: givengraph randomgraph process_temporal_graph
 
 givengraph: $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/times_givengraph $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
@@ -57,14 +57,18 @@ givengraph: $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/S
 randomgraph: $(SRC_DIR)/times_randomgraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/times_randomgraph $(SRC_DIR)/times_randomgraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
-build:
-	mkdir -p $@
+process_temporal_graph: $(SRC_DIR)/process_temporal_graph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
+	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/process_temporal_graph $(SRC_DIR)/process_temporal_graph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
+
 
 $(MAIN): $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/$(MAIN) $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
 $(EXSNAP)/Snap.o: | $(EXSNAP)/Snap.o
 	make -C $(EXSNAP)
+
+build:
+	mkdir -p $@
 
 clean:
 	rm -f *.o  $(MAIN)  $(MAIN).exe
