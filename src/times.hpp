@@ -1,34 +1,31 @@
-//
 //  times.hpp
 //
 //  Created by Jithin K Sreedharan on 2/20/17.
 //  Copyright © 2017 Jithin K Sreedharan. All rights reserved.
-//
 
 #ifndef times_hpp
 #define times_hpp
 
-#include "Snap.h"
+#include <inttypes.h>  //To print properly uint64_t
+#include <omp.h>
+#include <stdio.h>
+#include <algorithm>  // for transform
 #include <cmath>
 #include <cstdlib>
 #include <fstream>
+#include <functional>  //for bind1st
+#include <iomanip>
 #include <iostream>
 #include <iterator>
-#include <random> //C++11 specific
-#include <stdio.h>
-#include <tuple>
-#include <vector>
-// #include <queue>
-#include <algorithm>  // for transform
-#include <functional> //for bind1st
-#include <inttypes.h> //To print properly uint64_t
-#include <iomanip>
 #include <map>
 #include <numeric>
-#include <omp.h>
+#include <random>  //C++11 specific
 #include <set>
 #include <string>
+#include <tuple>
 #include <unordered_map>
+#include <vector>
+#include "Snap.h"
 
 #undef max
 #undef min
@@ -53,7 +50,8 @@ void print_TIntV(TIntV v, char *S);
 void print_TUInt64V(TUInt64V v, char *S);
 template <typename Iter, typename RandomGenerator>
 Iter select_randomly(Iter start, Iter end, RandomGenerator &g);
-template <typename Iter> Iter select_randomly(Iter start, Iter end);
+template <typename Iter>
+Iter select_randomly(Iter start, Iter end);
 int rangeRandom(int min, int max);
 PNEANet GenPrefAttachGeneral(const int &time_n, const float &pr_alpha,
                              const int &vec_p_1, const int &vec_p_2,
@@ -65,9 +63,9 @@ PNEANet GenPrefAttachGeneral_undirected(
     const int &vec_p_2, const float &pr_beta, const int &vec_q_1,
     const int &vec_q_2, const float &pr_delta, const float &pr_gamma,
     const bool &self_loops_allowed);
-std::tuple<double, double, double, double>
-count_perfect_correct_pairs_DAG(PNEANet G_DAG, TUInt64UInt64VH rank_new,
-                                TUInt64UInt64H rank_orig, uint64_t G_no_nodes);
+std::tuple<double, double, double, double> count_perfect_correct_pairs_DAG(
+    PNEANet G_DAG, TUInt64UInt64VH rank_new, TUInt64UInt64H rank_orig,
+    uint64_t G_no_nodes);
 std::pair<double, double> count_tree_size_DAG(PNEANet G_DAG,
                                               TUInt64UInt64VH rank_new,
                                               uint64_t G_no_nodes);
@@ -93,8 +91,8 @@ PNEANet GenCopyModel_jks(const int &no_nodes, const double &beta, const int &m,
                          TRnd &Rnd = TInt::Rnd);
 PNEANet GenCopyModel_undirected_jks(const int &no_nodes, const double &beta,
                                     const int &m, TRnd &Rnd = TInt::Rnd);
-std::pair<TUInt64UInt64VH, TUInt64UInt64H>
-find_parallel_rank_returnnoderank(PNEANet G);
+std::pair<TUInt64UInt64VH, TUInt64UInt64H> find_parallel_rank_returnnoderank(
+    PNEANet G);
 std::pair<Tuint64uint64VM, Tuint64uint64M>
 find_parallel_rank_returnnoderank_STL(PNEANet G);
 std::pair<double, uint64_t> Count_extra_pairs(PNEANet G, uint64_t G_no_nodes,
@@ -113,12 +111,11 @@ void write_dot(PNEANet G, const char *FName_t, const char *Desc);
 TUInt64UInt64H find_seq_rank_unif_Hout_node_rank(PNEANet G);
 TUInt64UInt64VH find_seq_rank_unif_VHout(PNEANet G);
 
-std::tuple<TUInt64UInt64H, double>
-find_seq_rank_unif_n_prob_Hout_node_rank(PNEANet G);
+std::tuple<TUInt64UInt64H, double> find_seq_rank_unif_n_prob_Hout_node_rank(
+    PNEANet G);
 
-std::pair<uint64_t, uint64_t>
-find_prec_recall_real_networks(TUInt64UInt64VH rank_new,
-                               TUInt64UInt64H rank_orig, uint64_t G_no_nodes);
+std::pair<uint64_t, uint64_t> find_prec_recall_real_networks(
+    TUInt64UInt64VH rank_new, TUInt64UInt64H rank_orig, uint64_t G_no_nodes);
 
 std::tuple<uint64_t, uint64_t, uint64_t> Count_extra_pairs_real_networks(
     PNEANet G, uint64_t G_no_nodes, TUInt64UInt64H rank_orig,
@@ -151,7 +148,8 @@ std::vector<std::vector<double>> find_recall_plot(Tuint64uint64M rank_node,
 double nCk(int n, int k);
 
 // Template definitions
-template <class PGraph> inline void PrintGStats(const char s[], PGraph Graph) {
+template <class PGraph>
+inline void PrintGStats(const char s[], PGraph Graph) {
   printf("graph %s, nodes %d, edges %d, empty %s\n", s, Graph->GetNodes(),
          Graph->GetEdges(), Graph->Empty() ? "yes" : "no");
 }
@@ -163,7 +161,8 @@ inline Iter select_randomly(Iter start, Iter end, RandomGenerator &g) {
   return start;
 }
 
-template <typename Iter> inline Iter select_randomly(Iter start, Iter end) {
+template <typename Iter>
+inline Iter select_randomly(Iter start, Iter end) {
   static std::random_device rd;
   static std::mt19937 gen(rd());
   return select_randomly(start, end, gen);

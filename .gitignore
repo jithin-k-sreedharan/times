@@ -5,6 +5,7 @@
 /Snap-3.0/
 /src/preprocessing_Friendster.cpp
 /src/unsorted_functions_code.cpp
+/src/times_randomgraph_extra.cpp
 
 *.sublime*
 *.tags
