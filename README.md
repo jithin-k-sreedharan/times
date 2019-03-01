@@ -39,7 +39,7 @@ To build the algorithm of finding arrival order of a given graph in edge-list fo
 ```bash
 make givengraph
 ```
-To build the algorithm of finding arrival order various random graph models:
+To build the algorithm of finding arrival order of various random graph models:
 ```bash
 make randomgraph
 ```
