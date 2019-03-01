@@ -35,15 +35,14 @@ git clone https://github.com/jithin-k-sreedharan/times.git
 - [SNAP](https://snap.stanford.edu/snap/index.html) graph library. The latest version of the library is already provided with the code and is available in `libraries` folder.
 
 ## Installation and Running the Algorithms
-To build the algorithm of finding arrival order of a given graph in edge-list format:
+**Finding arrival order of a given graph in edge-list format:**
 ```bash
 make givengraph
 ```
-To build the algorithm of finding arrival order of various random graph models:
+**Finding arrival order of various random graph models:**
 ```bash
 make randomgraph
 ```
-
 **Utilities for processing temporal graphs:**
 ```bash
 make process_temporal_graph
@@ -54,7 +53,7 @@ An example run
 ```
 This will process the graph file `FB_wall_network.txt` which has edges listed in `u v t` format per line (for node pair: `(u,v)`, the time of edge creation is `t`). It will output `predicted_rank.txt` with `u rank` format (arrival `rank` for node `u`) per line.
 
-To build all the algorithms
+**To build all the algorithms**
 ```bash
 make all
 ```
