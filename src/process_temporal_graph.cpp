@@ -1,12 +1,14 @@
-// (c) 2019 Jithin K. Sreedharan
+/*(c) 2019 Jithin K. Sreedharan
 
-// Useful functions for a given graph in edgelist format with a time stamp
-// i.e., entries of the form (u,v,t), where t is the unix timestamp of the edge.
-// The following are the choices available:
-// 0. The program finds the largest weak connected component of a directed graph
-// and saves its edgelist with time stamp
-// 1. Rank the nodes of the graph based on the time stamp.
-// Usage: ./process_temporal_graph -i:"graph_file.txt" -choice:1
+Useful functions for a given graph in edgelist format with a time stamp
+i.e., entries of the form (u,v,t), where t is the unix timestamp of the edge.
+
+The following are the choices available:
+  0. The program finds the largest weak connected component of a directed graph
+  and saves its edgelist with time stamp
+  1. Rank the nodes of the graph based on the time stamp.
+
+Sample usage: ./process_temporal_graph -i:"graph_file.txt" -choice:1 */
 
 #include "times.hpp"
 int main(int argc, char *argv[]) {
@@ -114,7 +116,6 @@ int main(int argc, char *argv[]) {
         unixtime_rank.insert({val, i});
         i++;
       }
-
       std::string OutFm_1 = "predicted_rank.txt";
       std::ofstream ost{OutFm_1};
       for (auto &val : node_time) {

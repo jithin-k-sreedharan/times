@@ -21,6 +21,7 @@ ifeq ($(UNAME), Linux)
 	#CXXOPENMP = -fopenmp
 	LIBS += -lrt
 else ifeq ($(UNAME), Darwin)
+	# CC = g++
 	CC = g++-8
 	CXXFLAGS += -std=c++11 -Wall
 	CXXFLAGS += -O3 -DNDEBUG
@@ -44,25 +45,22 @@ endif
 MAIN = times_givengraph
 SRC_DIR = ./src
 BUILD_DIR = ./build
-# Snap-3.0 is required for finding P_uv forthe optmization; for compiling vertex_ordering_sequential_predict
-# SNAP_DIR = ./libraries/Snap-3.0
 SNAP_DIR = ./libraries/Snap-4.0
 DEPCPP = times_functions
 
-all: givengraph randomgraph process_temporal_graph
+all: times_givengraph times_randomgraph times_randomgraph_estimate_puv process_temporal_graph
 
-givengraph: $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
+times_givengraph: $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/times_givengraph $(SRC_DIR)/times_givengraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
-randomgraph: $(SRC_DIR)/times_randomgraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
+times_randomgraph: $(SRC_DIR)/times_randomgraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/times_randomgraph $(SRC_DIR)/times_randomgraph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
+
+times_randomgraph_estimate_puv: $(SRC_DIR)/times_randomgraph_estimate_puv.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
+	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/times_randomgraph_estimate_puv $(SRC_DIR)/times_randomgraph_estimate_puv.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
 process_temporal_graph: $(SRC_DIR)/process_temporal_graph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o | build
 	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/process_temporal_graph $(SRC_DIR)/process_temporal_graph.cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
-
-
-$(MAIN): $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o
-	$(CC) $(CXXFLAGS) -o $(BUILD_DIR)/$(MAIN) $(SRC_DIR)/$(MAIN).cpp $(SRC_DIR)/$(DEPCPP).cpp $(EXSNAP)/Snap.o -I$(EXSNAP) -I$(EXSNAPADV) -I$(EXGLIB) -I$(EXSNAPEXP) $(LDFLAGS) $(LIBS)
 
 $(EXSNAP)/Snap.o: | $(EXSNAP)/Snap.o
 	make -C $(EXSNAP)
@@ -70,6 +68,7 @@ $(EXSNAP)/Snap.o: | $(EXSNAP)/Snap.o
 build:
 	mkdir -p $@
 
+.PHONY: clean all times_givengraph times_randomgraph process_temporal_graph
+
 clean:
-	rm -f *.o  $(MAIN)  $(MAIN).exe
-	rm -rf Debug Release
+	rm -f $(BUILD_DIR)/times_givengraph $(BUILD_DIR)/times_randomgraph $(BUILD_DIR)/process_temporal_graph $(BUILD_DIR)/times_givengraph.exe $(BUILD_DIR)/times_randomgraph.exe $(BUILD_DIR)/process_temporal_graph.exe

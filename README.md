@@ -37,21 +37,57 @@ git clone https://github.com/jithin-k-sreedharan/times.git
 ## Installation and Running the Algorithms
 **Finding arrival order of a given graph in edge-list format:**
 ```bash
-make givengraph
+make times_givengraph
+```
+An example run:
+```bash
+# Find precision and recall of Peeling, Peeling+ and Maximum density precision-1 estimator
+# Given Simple English Wikipedia graph edgelist and its node arrival order files
+./times_givengraph -i:"../data/dynamic-simplewiki.txt" -ior:"../data/dynamic-simplewiki_data.csv" -choice:1
 ```
 **Finding arrival order of various random graph models:**
 ```bash
-make randomgraph
+make times_randomgraph
+```
+<!-- We use a generalized preferential attachment generator with parameters as follows
+- `timen`: Total time-steps of the procedure
+- `pralpha`: With this probability a new node will be added; with probbaility `(1-pralpha)`, new edges will be added between existing nodes.
+- `vecp1`: Lower end of uniform distrbution for `m` (number of edges each new node brings into the graph) when a new node is added.
+- `vecp2`: Upper end of uniform distrbution for `m` (number of edges each new node brings into the graph) when a new node is added.
+- `prbeta`: With this probability end points of edges of the new node will be selected preferentially; with probability `(1-prbeta)` ebdpoints of edges of new node will be choosen uniformly at random.
+- `vecq1`: Lower end of uniform distrbution for `m` (number of edges each new node brings into the graph) when edges between existing nodes are added;
+- `vecq2`: Upper end of uniform distrbution for `m` (number of edges each new node brings into the graph) when edges between existing nodes are added.
+- `prdelta`: With this probability,When adding edges between exisiting nodes, slource node be selected preferentially.
+- `prgamma`: With this probability, when adding edges between exisiting nodes, Terminal node will be selected preferentially
+ -->
+ An example run:
+```bash
+# Find the average precision and recall of a generalized preferential attachment graph model
+# See beginning of /src/times_randomgraph.cpp for the explanation of parameters.
+./times_randomgraph -timen:5000 -pralpha:0.75 -vecp1:5 -vecp2:50 -prbeta:0.5 -vecq1:5 -vecq2:50  -prdelta:0.5 -prgamma:0.5 -noruns:1000 -choice:0
 ```
 **Utilities for processing temporal graphs:**
 ```bash
 make process_temporal_graph
 ```
-An example run
+An example run:
 ```bash
+# Process the graph file `FB_wall_network.txt` which has edges listed in `u v t` format per line
+# i.e., for node pair: `(u,v)`, the time of edge creation is `t`.
+# It will output `predicted_rank.txt` with `u rank` format (arrival `rank` for node `u`) per line.
 ./process_temporal_graph -i:"FB_wall_network.txt" -choice:1
 ```
-This will process the graph file `FB_wall_network.txt` which has edges listed in `u v t` format per line (for node pair: `(u,v)`, the time of edge creation is `t`). It will output `predicted_rank.txt` with `u rank` format (arrival `rank` for node `u`) per line.
+**To reproduce the optimal inference plot**
+1. Estimate p<sub>uv</sub>, the probability that for any two vertices u and v, vertex u is older than vertex v.
+  ```bash
+  make times_randomgraph_estimate_puv
+  ```
+  An example run:
+  ```bash
+  # See beginning of /src/times_randomgraph_estimate_puv.cpp for the explanation of parameters.
+  ./times_randomgraph_estimate_puv -timen:50 -pralpha:0.5 -vecp1:1 -vecp2:8 -prbeta:0.5 -vecq1:1 -vecq2:8  -prdelta:0.5 -prgamma:0.5 -noruns:100 -norunsMC:100 -choice:3
+  ```
+2. Run the IPython Jupyter file `scripts/times_optimization.ipynb`
 
 **To build all the algorithms**
 ```bash
@@ -59,10 +95,11 @@ make all
 ```
 Running `make` first time takes time as it needs to compile the `SNAP` library.
 
-#### Editing `Makefile` file for Mac systems
-The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
+#### Compiling issues and solutions
+- `Makefile` in Mac systems: The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
+- `Snap` library issue when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to run without getting error. It si already changed if you use the `Snap` library provided in the `libraries` folder.
 
 ## Data
-Most of the data is taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is taken from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
+Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is collected from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
 <!-- For the brain Connectome data, please download the brain connectome data from [here](link). The data is cleaned matrix version of the original human connectome project data. The code to clean the data is available here.
  -->

@@ -6,6 +6,7 @@
 /src/preprocessing_Friendster.cpp
 /src/unsorted_functions_code.cpp
 /src/times_randomgraph_extra.cpp
+/scripts/cleaning_graph_data.ipynb
 
 *.sublime*
 *.tags

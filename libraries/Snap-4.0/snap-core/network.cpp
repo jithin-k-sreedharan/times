@@ -9,7 +9,7 @@ void TNEANet::LoadNetworkShM(TShMIn& ShMIn) {
   EdgeH.LoadShM(ShMIn);
   KeyToIndexTypeN.LoadShM(ShMIn);
   KeyToIndexTypeE.LoadShM(ShMIn);
-      
+
   KeyToDenseN.LoadShM(ShMIn);
   KeyToDenseE.LoadShM(ShMIn);
 
@@ -72,7 +72,7 @@ void TNEANet::AttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Names
       Names.Add(NodeHI.GetKey());
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::AttrValueNI(const TInt& NId , TStrIntPrH::TIter NodeHI, TStrV& Values) const {
@@ -92,7 +92,7 @@ void TNEANet::IntAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Na
       Names.Add(NodeHI.GetKey());
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TIntV& Values) const {
@@ -103,7 +103,7 @@ void TNEANet::IntAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TIntV& V
       Values.Add(val);
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntVAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Names) const {
@@ -113,7 +113,7 @@ void TNEANet::IntVAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& N
       Names.Add(NodeHI.GetKey());
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntVAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TVec<TIntV>& Values) const {
@@ -144,7 +144,7 @@ void TNEANet::StrAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Na
       Names.Add(NodeHI.GetKey());
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::StrAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Values) const {
@@ -155,7 +155,7 @@ void TNEANet::StrAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& V
       Values.Add(val);
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::FltAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Names) const {
@@ -165,7 +165,7 @@ void TNEANet::FltAttrNameNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TStrV& Na
       Names.Add(NodeHI.GetKey());
     }
     NodeHI++;
-  }  
+  }
 }
 
 void TNEANet::FltAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TFltV& Values) const {
@@ -176,7 +176,7 @@ void TNEANet::FltAttrValueNI(const TInt& NId, TStrIntPrH::TIter NodeHI, TFltV& V
       Values.Add(val);
     }
     NodeHI++;
-  }  
+  }
 }
 
 bool TNEANet::IsAttrDeletedN(const int& NId, const TStr& attr) const {
@@ -264,7 +264,7 @@ void TNEANet::AttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Names
       Names.Add(EdgeHI.GetKey());
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::AttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Values) const {
@@ -274,7 +274,7 @@ void TNEANet::AttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Valu
       Values.Add(GetEdgeAttrValue(EId, EdgeHI));
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Names) const {
@@ -284,7 +284,7 @@ void TNEANet::IntAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Na
       Names.Add(EdgeHI.GetKey());
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TIntV& Values) const {
@@ -295,7 +295,7 @@ void TNEANet::IntAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TIntV& V
       Values.Add(val);
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntVAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Names) const {
@@ -305,7 +305,7 @@ void TNEANet::IntVAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& N
       Names.Add(EdgeHI.GetKey());
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::IntVAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TVec<TIntV>& Values) const {
@@ -336,7 +336,7 @@ void TNEANet::StrAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Na
       Names.Add(EdgeHI.GetKey());
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::StrAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Values) const {
@@ -347,7 +347,7 @@ void TNEANet::StrAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& V
       Values.Add(val);
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::FltAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Names) const {
@@ -357,7 +357,7 @@ void TNEANet::FltAttrNameEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TStrV& Na
       Names.Add(EdgeHI.GetKey());
     }
     EdgeHI++;
-  }  
+  }
 }
 
 void TNEANet::FltAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TFltV& Values) const {
@@ -368,7 +368,7 @@ void TNEANet::FltAttrValueEI(const TInt& EId, TStrIntPrH::TIter EdgeHI, TFltV& V
       Values.Add(val);
     }
     EdgeHI++;
-  }  
+  }
 }
 
 bool TNEANet::IsAttrDeletedE(const int& EId, const TStr& attr) const {
@@ -483,7 +483,7 @@ int TNEANet::AddAttributes(const int NId) {
     TStr attr = DefIntVec[i];
     TVec<TInt>& IntVec = VecOfIntVecsN[KeyToIndexTypeN.GetDat(DefIntVec[i]).Val2];
     IntVec[NodeH.GetKeyId(NId)] = GetIntAttrDefaultN(attr);
-  } 
+  }
   for (i = 0; i < VecOfStrVecsN.Len(); i++) {
     TVec<TStr>& StrVec = VecOfStrVecsN[i];
     int KeyId = NodeH.GetKeyId(NId);
@@ -720,7 +720,7 @@ void TNEANet::DelEdge(const int& EId) {
 void TNEANet::DelEdge(const int& SrcNId, const int& DstNId, const bool& IsDir) {
   int EId = 0;
   bool Edge = IsEdge(SrcNId, DstNId, EId, IsDir);
-  IAssert(Edge); // there is at least one edge
+  // IAssert(Edge); // there is at least one edge
   while (Edge) {
     DelEdge(EId);
     Edge = IsEdge(SrcNId, DstNId, EId, IsDir);
@@ -870,19 +870,19 @@ void TNEANet::Dump(FILE *OutF) const {
     IntAttrValueEI(EdgeI.GetId(), IntAttrE);
     fprintf(OutF, "    eai[%d]", IntAttrE.Len());
     for (int i = 0; i < IntAttrE.Len(); i++) {
-      fprintf(OutF, " %*i", EdgePlaces, IntAttrE[i]()); 
+      fprintf(OutF, " %*i", EdgePlaces, IntAttrE[i]());
     }
     TStrV StrAttrE;
     StrAttrValueEI(EdgeI.GetId(), StrAttrE);
     fprintf(OutF, "    eas[%d]", StrAttrE.Len());
     for (int i = 0; i < StrAttrE.Len(); i++) {
-      fprintf(OutF, " %*s", EdgePlaces, StrAttrE[i]()); 
+      fprintf(OutF, " %*s", EdgePlaces, StrAttrE[i]());
     }
     TFltV FltAttrE;
     FltAttrValueEI(EdgeI.GetId(), FltAttrE);
     fprintf(OutF, "    eaf[%d]", FltAttrE.Len());
     for (int i = 0; i < FltAttrE.Len(); i++) {
-      fprintf(OutF, " %*f", EdgePlaces, FltAttrE[i]()); 
+      fprintf(OutF, " %*f", EdgePlaces, FltAttrE[i]());
     }
     fprintf(OutF, "\n");
   }
@@ -933,9 +933,9 @@ int TNEANet::AddIntVAttrDatN(const int& NId, const TIntV& value, const TStr& att
     THash<TInt, TIntV>& NewHash = VecOfIntHashVecsN[KeyToIndexTypeN.GetDat(attr).Val2];
     NewHash.AddDat(NodeH.GetKeyId(NId), value);
   }
-  
+
   return 0;
-} 
+}
 
 int TNEANet::AppendIntVAttrDatN(const int& NId, const TInt& value, const TStr& attr, TBool UseDense) {
   if (!IsNode(NId)) {
@@ -957,7 +957,7 @@ int TNEANet::AppendIntVAttrDatN(const int& NId, const TInt& value, const TStr& a
     NewHash[NodeH.GetKeyId(NId)].Add(value);
   }
   return 0;
-} 
+}
 
 int TNEANet::DelFromIntVAttrDatN(const int& NId, const TInt& value, const TStr& attr) {
   TInt CurrLen;
@@ -982,7 +982,7 @@ int TNEANet::DelFromIntVAttrDatN(const int& NId, const TInt& value, const TStr& 
     return -1;
   }
   return 0;
-} 
+}
 
 int TNEANet::AddStrAttrDatN(const int& NId, const TStr& value, const TStr& attr) {
   int i;
@@ -1005,7 +1005,7 @@ int TNEANet::AddStrAttrDatN(const int& NId, const TStr& value, const TStr& attr)
     VecOfStrVecsN.Add(NewVec);
   }
   return 0;
-} 
+}
 
 int TNEANet::AddFltAttrDatN(const int& NId, const TFlt& value, const TStr& attr) {
   int i;
@@ -1029,7 +1029,7 @@ int TNEANet::AddFltAttrDatN(const int& NId, const TFlt& value, const TStr& attr)
     VecOfFltVecsN.Add(NewVec);
   }
   return 0;
-} 
+}
 
 int TNEANet::AddIntAttrDatE(const int& EId, const TInt& value, const TStr& attr) {
   int i;
@@ -1074,7 +1074,7 @@ int TNEANet::AddIntVAttrDatE(const int& EId, const TIntV& value, const TStr& att
     NewHash.AddDat(EdgeH.GetKeyId(EId), value);
   }
   return 0;
-} 
+}
 
 int TNEANet::AppendIntVAttrDatE(const int& EId, const TInt& value, const TStr& attr, TBool UseDense) {
   if (!IsNode(EId)) {
@@ -1116,7 +1116,7 @@ int TNEANet::AddStrAttrDatE(const int& EId, const TStr& value, const TStr& attr)
     VecOfStrVecsE.Add(NewVec);
   }
   return 0;
-} 
+}
 
 int TNEANet::AddFltAttrDatE(const int& EId, const TFlt& value, const TStr& attr) {
   int i;
@@ -1243,7 +1243,7 @@ int TNEANet::DelAttrDatN(const int& NId, const TStr& attr) {
   }
   return 0;
 }
-             
+
 int TNEANet::DelAttrDatE(const int& EId, const TStr& attr) {
   // TODO(nkhadke): add error checking
   TInt vecType = KeyToIndexTypeE(attr).Val1;
@@ -1423,7 +1423,7 @@ int TNEANet::DelAttrN(const TStr& attr) {
       IntDefaultsN.DelKey(attr);
     }
   } else if (vecType == StrType) {
-    VecOfStrVecsN[KeyToIndexTypeN.GetDat(attr).Val2] = TVec<TStr>();  
+    VecOfStrVecsN[KeyToIndexTypeN.GetDat(attr).Val2] = TVec<TStr>();
     if (StrDefaultsN.IsKey(attr)) {
       StrDefaultsN.DelKey(attr);
     }
@@ -1455,7 +1455,7 @@ int TNEANet::DelAttrE(const TStr& attr) {
     VecOfStrVecsE[KeyToIndexTypeE.GetDat(attr).Val2] = TVec<TStr>();
     if (StrDefaultsE.IsKey(attr)) {
       StrDefaultsE.DelKey(attr);
-    }  
+    }
   } else if (vecType == FltType) {
     VecOfFltVecsE[KeyToIndexTypeE.GetDat(attr).Val2] = TVec<TFlt>();
     if (FltDefaultsE.IsKey(attr)) {
@@ -1850,7 +1850,7 @@ int TUndirNet::AddNode(const int& NId, const TVecPool<TInt>& Pool, const int& NI
   } else {
     IAssertR(!IsNode(NId), TStr::Fmt("NodeId %d already exists", NId));
     NewNId = NId;
-    MxNId = TMath::Mx(NewNId+1, MxNId()); 
+    MxNId = TMath::Mx(NewNId+1, MxNId());
   }
   TNode& Node = NodeH.AddDat(NewNId);
   Node.Id = NewNId;
