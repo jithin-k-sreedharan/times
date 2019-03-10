@@ -87,7 +87,7 @@ An example run:
   # See the beginning of /src/times_randomgraph_estimate_puv.cpp for the explanation of parameters.
   ./times_randomgraph_estimate_puv -timen:50 -pralpha:0.5 -vecp1:1 -vecp2:8 -prbeta:0.5 -vecq1:1 -vecq2:8  -prdelta:0.5 -prgamma:0.5 -noruns:100 -norunsMC:100 -choice:3
   ```
-2. Run the IPython Jupyter file `scripts/times_optimization.ipynb`
+2. Run the IPython Jupyter file `src/times_optimization.ipynb`
 
 **To build all the algorithms**
 ```bash
