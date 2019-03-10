@@ -97,7 +97,7 @@ Running `make` first time takes time as it needs to compile the `SNAP` library.
 
 #### Compiling issues and solutions
 - `Makefile` in Mac systems: The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
-- `Snap` library issues an error when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to remove the error. It si already changed if you use the `Snap` library provided in the `libraries` folder.
+- `Snap` library issues an error when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to remove the error. It is already changed if you use the `Snap` library provided in the `libraries` folder.
 
 ## Data
 Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is collected from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
