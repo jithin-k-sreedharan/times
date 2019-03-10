@@ -42,7 +42,7 @@ make times_givengraph
 An example run:
 ```bash
 # Find precision and recall of Peeling, Peeling+ and Maximum density precision-1 estimator
-# Given Simple English Wikipedia graph edgelist and its node arrival order files
+# Given Simple English Wikipedia graph edgelist and its node arrival order file
 ./times_givengraph -i:"../data/dynamic-simplewiki.txt" -ior:"../data/dynamic-simplewiki_data.csv" -choice:1
 ```
 **Finding arrival order of various random graph models:**
