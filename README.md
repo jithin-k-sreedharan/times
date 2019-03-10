@@ -63,7 +63,7 @@ make times_randomgraph
  An example run:
 ```bash
 # Find the average precision and recall of a generalized preferential attachment graph model
-# See beginning of /src/times_randomgraph.cpp for the explanation of parameters.
+# See the beginning of /src/times_randomgraph.cpp for the explanation of parameters.
 ./times_randomgraph -timen:5000 -pralpha:0.75 -vecp1:5 -vecp2:50 -prbeta:0.5 -vecq1:5 -vecq2:50  -prdelta:0.5 -prgamma:0.5 -noruns:1000 -choice:0
 ```
 **Utilities for processing temporal graphs:**
@@ -84,7 +84,7 @@ An example run:
   ```
   An example run:
   ```bash
-  # See beginning of /src/times_randomgraph_estimate_puv.cpp for the explanation of parameters.
+  # See the beginning of /src/times_randomgraph_estimate_puv.cpp for the explanation of parameters.
   ./times_randomgraph_estimate_puv -timen:50 -pralpha:0.5 -vecp1:1 -vecp2:8 -prbeta:0.5 -vecq1:1 -vecq2:8  -prdelta:0.5 -prgamma:0.5 -noruns:100 -norunsMC:100 -choice:3
   ```
 2. Run the IPython Jupyter file `scripts/times_optimization.ipynb`
@@ -97,7 +97,7 @@ Running `make` first time takes time as it needs to compile the `SNAP` library.
 
 #### Compiling issues and solutions
 - `Makefile` in Mac systems: The default C++ compiler for Mac is `clang` and is invoked even if we use `g++` command. Instead, to use the GNU C++ compiler, install it via `brew install gcc` command, and change to `CC = g++-8` (8 is the version; replace it with the installed version) under `else ifeq ($(UNAME), Darwin)`.
-- `Snap` library issue when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to run without getting error. It si already changed if you use the `Snap` library provided in the `libraries` folder.
+- `Snap` library issues an error when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to remove the error. It si already changed if you use the `Snap` library provided in the `libraries` folder.
 
 ## Data
 Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is collected from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
