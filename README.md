@@ -100,6 +100,9 @@ Running `make` first time takes time as it needs to compile the `SNAP` library.
 - `Snap` library issues an error when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to remove the error. It is already changed if you use the `Snap` library provided in the `libraries` folder.
 
 ## Data
-Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain data which is collected from [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation).
+Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain network data. We extensively describe the procedure to collect raw brain data and form brain networks out of it in a separate [repository](https://github.com/jithin-k-sreedharan/data_human_brain_networks).
+
+## Acknowledgments
+This work was supported by NSF Center for Science of Information (CSoI) Grant CCF-0939370, NSF Grants CCF-1524312 and CSR-1422338, and by NIH Grant 1U01CA198941-01.
 <!-- For the brain Connectome data, please download the brain connectome data from [here](link). The data is cleaned matrix version of the original human connectome project data. The code to clean the data is available here.
  -->
