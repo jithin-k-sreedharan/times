@@ -100,7 +100,7 @@ Running `make` first time takes time as it needs to compile the `SNAP` library.
 - `Snap` library issues an error when running `times_randomgraph_estimate_puv`: Line 723 of `Snap-4.0/snap-core/network.cpp` needs to be commented out to remove the error. It is already changed if you use the `Snap` library provided in the `libraries` folder.
 
 ## Data
-Most of the data are taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain network data. We describe the procedure to collect raw brain data and to form brain networks out of it in a separate [repository](https://github.com/jithin-k-sreedharan/data_human_brain_networks).
+Most of the data is taken from [SNAP database](https://snap.stanford.edu/data/index.html) with the exception of brain network data. We describe the procedure to collect raw brain data and to form brain networks out of it in a separate [repository](https://github.com/jithin-k-sreedharan/data_human_brain_networks).
 
 ## Acknowledgments
 This work was supported by NSF Center for Science of Information (CSoI) Grant CCF-0939370, NSF Grants CCF-1524312 and CSR-1422338, and by NIH Grant 1U01CA198941-01.
